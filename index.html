@@ -1,35 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>RSOL - Random Siege Operator Loadout</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<style type="text/css">
 		body {
 			background: #333;
 		}
-	    .container {
-	    	text-align: center;
-	    	margin-top: 10%;
-	    	padding: 0;
-	    	border: #eee solid;
-	    	border-radius: 5px;	
-	    }
-	    h1 {
-	    	padding: 20px;
-	    }
-    </style>
+
+		.container {
+			text-align: center;
+			margin-top: 10%;
+			padding: 0;
+			border: #eee solid;
+			border-radius: 5px;
+		}
+
+		h1 {
+			padding: 20px;
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container">
 		<div class="bg-secondary text-white py-5">
 			<h1>Random Siege Operator Loadout</h1>
-			<h1>Coming Soon</h1>
+			<button class="btn" id="rando" onclick="displayNums()">Randomize</button>
+			<div>
+				<h2>Operator #:</h2>
+				<h3 id="num0"></h3>
+				<h2>Primary #:</h2>
+				<h3 id="num1"></h3>
+				<h2>Secondary #:</h2>
+				<h3 id="num2"></h3>
+				<h2>Gadet #:</h2>
+				<h3 id="num3"></h3>
+			</div>
 		</div>
 	</div>
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+	</script>
+
+	<script type="text/javascript">
+		var rando = document.getElementById('rando');
+		var operatorNum = document.getElementById('num0');
+		var primaryNum = document.getElementById('num1');
+		var secondaryNum = document.getElementById('num2');
+		var gadgetNum = document.getElementById('num3');
+
+		function randoNums(max) {
+			return Math.floor(Math.random() * Math.floor(max) + 1);
+		}
+
+		function displayNums() {
+			operatorNum.innerHTML = randoNums(25);
+			primaryNum.innerHTML = randoNums(3);
+			secondaryNum.innerHTML = randoNums(2);
+			gadgetNum.innerHTML = randoNums(2);
+		}
+	</script>
 </body>
+
 </html>
