@@ -11,36 +11,36 @@
 			background: #333;
 		}
 
-		.container {
+		.app {
 			text-align: center;
-			margin-top: 10%;
-			padding: 0;
-			border: #eee solid;
-			border-radius: 5px;
 		}
 
 		h1 {
-			padding: 20px;
+			padding: 20px 0;
 		}
 
 		h2 {
-			padding: 20px;
+			padding: 20px 0;
 		}
 
 		.legend {
-			text-align: center;
-			font-style: italic;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
 
 		li {
 			padding: 5px;
+			text-align: left;
+			font-size: 1em;
+			font-style: italic;
 		}
 	</style>
 </head>
 
 <body>
-	<div class="container">
-		<div class="bg-secondary text-white py-5">
+	<div class="app">
+		<div class="text-white py-5">
 			<h1>Random Siege Operator Loadout</h1>
 			<button class="btn" id="rando" onclick="displayNums()">Randomize</button>
 			<div>
@@ -53,33 +53,37 @@
 				<h2>Gadet #:</h2>
 				<h3 id="num3"></h3>
 			</div>
-			<div class="legend">
-				<ol>
-					<li>Sledge || Smoke</li>
-					<li>Thatcher || Mute</li>
-					<li>Ash || Castle</li>
-					<li>Thermite || Pulse</li>
-					<li>Twtich || Doc</li>
-					<li>Montagne || Rook</li>
-					<li>Glaz || Kapkan</li>
-					<li>Fuze || Tachanka</li>
-					<li>Blitz || Jager</li>
-					<li>IQ || Bandit</li>
-					<li>Buck || Frost</li>
-					<li>Blackbeard || Valkyrie</li>
-					<li>Capitao || Caveria</li>
-					<li>Hibana || Echo</li>
-					<li>Jackal || Mira</li>
-					<li>Ying || Lesion</li>
-					<li>Zofia || Ela</li>
-					<li>Dokkaebi || Vigil</li>
-					<li>Lion || Alibi</li>
-					<li>Finka || Masestro</li>
-					<li>Maverick || Clash</li>
-					<li>Nomad || Kaid</li>
-					<li>Gridlock || Mozzie</li>
-					<li>Nook || Warden</li>
-					<li>Amaru || Goyo</li>
+			<div class="container">
+				<ol class="legend">
+					<div>
+						<li>Sledge || Smoke</li>
+						<li>Thatcher || Mute</li>
+						<li>Ash || Castle</li>
+						<li>Thermite || Pulse</li>
+						<li>Twtich || Doc</li>
+						<li>Montagne || Rook</li>
+						<li>Glaz || Kapkan</li>
+						<li>Fuze || Tachanka</li>
+						<li>Blitz || Jager</li>
+						<li>IQ || Bandit</li>
+						<li>Buck || Frost</li>
+						<li>Blackbeard || Valkyrie</li>
+						<li>Capitao || Caveria</li>
+						<li>Hibana || Echo</li>
+					</div>
+					<div>
+						<li>Jackal || Mira</li>
+						<li>Ying || Lesion</li>
+						<li>Zofia || Ela</li>
+						<li>Dokkaebi || Vigil</li>
+						<li>Lion || Alibi</li>
+						<li>Finka || Masestro</li>
+						<li>Maverick || Clash</li>
+						<li>Nomad || Kaid</li>
+						<li>Gridlock || Mozzie</li>
+						<li>Nook || Warden</li>
+						<li>Amaru || Goyo</li>
+					</div>
 				</ol>
 			</div>
 		</div>
