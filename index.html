@@ -22,25 +22,6 @@
 		h2 {
 			padding: 20px 0;
 		}
-
-		.legend {
-			margin: 0 auto;
-			width: 80%;
-			padding: 0;
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-		}
-
-		.legend>div {
-			margin: 25px;
-		}
-
-		li {
-			text-align: left;
-			font-size: 1em;
-			font-style: italic;
-		}
 	</style>
 </head>
 
@@ -58,45 +39,6 @@
 				<h3 id="num2"></h3>
 				<h2>Gadet #:</h2>
 				<h3 id="num3"></h3>
-			</div>
-			<div class="container">
-				<ol class="legend">
-					<div>
-						<li>Sledge || Smoke</li>
-						<li>Thatcher || Mute</li>
-						<li>Ash || Castle</li>
-						<li>Thermite || Pulse</li>
-						<li>Twtich || Doc</li>
-					</div>
-					<div>
-						<li>Montagne || Rook</li>
-						<li>Glaz || Kapkan</li>
-						<li>Fuze || Tachanka</li>
-						<li>Blitz || Jager</li>
-						<li>IQ || Bandit</li>
-					</div>
-					<div>
-						<li>Buck || Frost</li>
-						<li>Blackbeard || Valkyrie</li>
-						<li>Capitao || Caveria</li>
-						<li>Hibana || Echo</li>
-						<li>Jackal || Mira</li>
-					</div>
-					<div>
-						<li>Ying || Lesion</li>
-						<li>Zofia || Ela</li>
-						<li>Dokkaebi || Vigil</li>
-						<li>Lion || Alibi</li>
-						<li>Finka || Masestro</li>
-					</div>
-					<div>
-						<li>Maverick || Clash</li>
-						<li>Nomad || Kaid</li>
-						<li>Gridlock || Mozzie</li>
-						<li>Nook || Warden</li>
-						<li>Amaru || Goyo</li>
-					</div>
-				</ol>
 			</div>
 		</div>
 	</div>
@@ -123,8 +65,92 @@
 		}
 
 		function displayNums() {
-			operatorNum.innerHTML = randoNums(25);
-			primaryNum.innerHTML = randoNums(3);
+			var primNum;
+			switch (randoNums(25)) {
+				case 1:
+					operatorNum.innerHTML = "Sledge || Mute";
+					break;
+				case 2:
+					operatorNum.innerHTML = "Thatcher || Smoke";
+					break;
+				case 3:
+					operatorNum.innerHTML = "Ash || Castle";
+					break;
+				case 4:
+					operatorNum.innerHTML = "Thermite || Pulse";
+					break;
+				case 5:
+					operatorNum.innerHTML = "Twtich || Doc";
+					break;
+				case 6:
+					operatorNum.innerHTML = "Montagne || Rook";
+					break;
+				case 7:
+					operatorNum.innerHTML = "Glaz || Kapkan";
+					break;
+				case 8:
+					operatorNum.innerHTML = "Fuze || Tachanka";
+					break;
+				case 9:
+					operatorNum.innerHTML = "Blitz || Jager";
+					break;
+				case 10:
+					operatorNum.innerHTML = "IQ || Bandit";
+					break;
+				case 11:
+					operatorNum.innerHTML = "Buck || Frost";
+					break;
+				case 12:
+					operatorNum.innerHTML = "Blackbeard || Valkyrie";
+					break;
+				case 13:
+					operatorNum.innerHTML = "Capitao || Caveria";
+					break;
+				case 14:
+					operatorNum.innerHTML = "Hibana || Echo";
+					break;
+				case 15:
+					operatorNum.innerHTML = "Jackal || Mira";
+					break;
+				case 16:
+					operatorNum.innerHTML = "Ying || Lesion";
+					break;
+				case 17:
+					operatorNum.innerHTML = "Zofia || Ela";
+					break;
+				case 18:
+					operatorNum.innerHTML = "Dokkaebi || Vigil";
+					break;
+				case 19:
+					operatorNum.innerHTML = "Lion || Alibi";
+					break;
+				case 20:
+					operatorNum.innerHTML = "Finka || Masestro";
+					break;
+				case 21:
+					operatorNum.innerHTML = "Maverick || Clash";
+					break;
+				case 22:
+					operatorNum.innerHTML = "Nomad || Kaid";
+					break;
+				case 23:
+					operatorNum.innerHTML = "Gridlock || Mozzie";
+					break;
+				case 24:
+					operatorNum.innerHTML = "Nook || Warden";
+					break;
+				case 25:
+					operatorNum.innerHTML = "Amaru || Goyo";
+					break;
+			}
+
+			primNum = randoNums(3);
+			if (primNum == 3) {
+				primaryNum.innerHTML = primNum + " || " + randoNums(2);
+			} else {
+				primaryNum.innerHTML = primNum;
+			}
+
 			secondaryNum.innerHTML = randoNums(2);
 			gadgetNum.innerHTML = randoNums(2);
 		}
