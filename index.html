@@ -69,7 +69,10 @@
 
 		function displayNums() {
 			var primNum;
-			switch (randoNums(25)) {
+			var secNum;
+			var gadgNum;
+			
+			switch (randoNums(34)) {
 				case 1:
 					operatorNum.innerHTML = "Sledge || Mute";
 					break;
@@ -181,7 +184,7 @@
 				primaryNum.innerHTML = primNum;
 			}
 
-			secoNum = randoNums(3);
+			secNum = randoNums(3);
 			if (secNum == 3) {
 				secondaryNum.innerHTML = secNum + " || " + randoNums(2);
 			} else {
