@@ -181,8 +181,19 @@
 				primaryNum.innerHTML = primNum;
 			}
 
-			secondaryNum.innerHTML = randoNums(2);
-			gadgetNum.innerHTML = randoNums(2);
+			secoNum = randoNums(3);
+			if (secNum == 3) {
+				secondaryNum.innerHTML = secNum + " || " + randoNums(2);
+			} else {
+				secondaryNum.innerHTML = secNum;
+			}
+
+			gadgNum = randoNums(3);
+			if (gadgNum == 3) {
+				gadgetNum.innerHTML = gadgNum + " || " + randoNums(2);
+			} else {
+				gadgetNum.innerHTML = gadgNum;
+			}
 		}
 	</script>
 </body>
