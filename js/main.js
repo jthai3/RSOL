@@ -50,7 +50,7 @@ function displayAttacker() {
 		"Blitz",
 		"IQ",
 		"Buck",
-		"Blaclbeard",
+		"Blackbeard",
 		"Capitao",
 		"Hibana",
 		"Jackal",
