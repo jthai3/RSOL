@@ -73,6 +73,7 @@ function displayAttacker() {
 		"Sens",
 		"Grim",
 		"Brava",
+		"Ram",
 	];
 
 	var randomNumber =
