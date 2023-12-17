@@ -117,6 +117,7 @@ function displayDefender() {
 		"Azami",
 		"Solis",
 		"Fenrir",
+		"Tubarao",
 	];
 
 	var randomNumber =
