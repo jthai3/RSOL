@@ -74,6 +74,7 @@ function displayAttacker() {
 		"Grim",
 		"Brava",
 		"Ram",
+		"Deimos",
 	];
 
 	var randomNumber =
