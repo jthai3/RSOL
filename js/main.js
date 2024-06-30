@@ -75,6 +75,7 @@ function displayAttacker() {
 		"Brava",
 		"Ram",
 		"Deimos",
+		"Striker",
 	];
 
 	var randomNumber =
@@ -119,6 +120,7 @@ function displayDefender() {
 		"Solis",
 		"Fenrir",
 		"Tubarao",
+		"Sentry",
 	];
 
 	var randomNumber =
