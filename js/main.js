@@ -121,6 +121,7 @@ function displayDefender() {
 		"Fenrir",
 		"Tubarao",
 		"Sentry",
+		"Skopos",
 	];
 
 	var randomNumber =
